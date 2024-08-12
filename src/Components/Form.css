@@ -1,0 +1,82 @@
+.body1 {
+    background: linear-gradient(45deg, #f3f4f6, #ddd6f3);
+    height: 100%;
+    border: 1px solid black;
+    /* max-height: 100; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .form-container{
+   
+    min-height: 100vh;
+    max-height: 100%;
+  }
+  
+  .Form-data {
+    /* display: flex; */
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* width: 100%; */
+    max-width: 400px;
+    margin-bottom: 2rem;
+  }
+  
+  .Form-data .MuiInput-root {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  .Form-data .MuiInput-input {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .Form-data .MuiButton-contained {
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #6a11cb;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Form-data .MuiButton-contained:hover {
+    background-color: #5a0cb2;
+  }
+  
+  .submitted-data {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    /* height: 100%; */
+   
+  }
+  
+  .submitted-data > div {
+    background: #f3f4f6;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .submitted-data > div:hover {
+    transform: translateY(-5px);
+  }
+  
+  .submitted-data h3 {
+    margin: 0.5rem 0;
+    color: #333;
+  }
+  
+  @media (max-width: 480px) {
+    .Form-data, .submitted-data {
+      padding: 1.5rem;
+    }
+  }
