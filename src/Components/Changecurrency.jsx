@@ -51,6 +51,7 @@ export default function Changecurrency() {
   }
 
   return (
+    <div className='quiz-main-container'>
     <div className="container">
       <center>
         <h1>Currency Converter</h1>
@@ -92,6 +93,7 @@ export default function Changecurrency() {
           </h2>
         )}
       </center>
+    </div>
     </div>
   );
 }

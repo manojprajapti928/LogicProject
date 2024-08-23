@@ -4,36 +4,43 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div>
-      <Link to={"/Components/Todo"}>
-        <div className="Todo">
-          <center>
-            <h1>Todo</h1>
-          </center>
-        </div>
-      </Link>
+    <div className="home-container">
+      <div className="card-grid">
+        <Link to={"/Components/Todo"} className="card-link">
+          <div className="card">
+            <h1 className="card-title">Todo</h1>
+          </div>
+        </Link>
+        
+        <Link to={"/Components/Clock"} className="card-link">
+          <div className="card">
+            <h1 className="card-title">Clock</h1>
+          </div>
+        </Link>
+        
+        <Link to={"/Components/Form"} className="card-link">
+          <div className="card">
+            <h1 className="card-title">Form</h1>
+          </div>
+        </Link>
+        
+        <Link to={"/Components/Changecurrency"} className="card-link">
+          <div className="card">
+            <h1 className="card-title">Currency</h1>
+          </div>
+        </Link>
 
-      <Link to={"/Components/Clock"}>
-        <div className="Todo">
-          <center>
-            <h1>Clock</h1>
-          </center>
-        </div>
-      </Link>
-      <Link to={"/Components/Form"}>
-        <div className="Todo">
-          <center>
-            <h1>Form</h1>
-          </center>
-        </div>
-      </Link>
-      <Link to={"/Components/Changecurrency"}>
-        <div className="Todo">
-          <center>
-            <h1>currency</h1>
-          </center>
-        </div>
-      </Link>
+        <Link to={"/Components/Quiz"} className="card-link">
+          <div className="card">
+            <h1 className="card-title">Quiz</h1>
+          </div>
+        </Link>
+        <Link to={"/Components/Calculator"} className="card-link">
+          <div className="card">
+            <h1 className="card-title">Calculator</h1>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 }
